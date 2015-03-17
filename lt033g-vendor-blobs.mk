@@ -125,5 +125,4 @@ PRODUCT_COPY_FILES += \
 
 # Modem
 PRODUCT_COPY_FILES += \
-    vendor/samsung/lt033g/proprietary/lib/libaudio-ril.so:system/lib/libaudio-ril.so \
     vendor/samsung/lt033g/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so
