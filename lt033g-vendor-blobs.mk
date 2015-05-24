@@ -61,8 +61,11 @@ PRODUCT_COPY_FILES += \
 
 # etc
 PRODUCT_COPY_FILES += \
+    $(VENDOR_DIR)/etc/PARAM.ini:system/etc/PARAM.ini \
+    $(VENDOR_DIR)/etc/PDC.ini:system/etc/PDC.ini \
     $(VENDOR_DIR)/etc/gps.conf:system/etc/gps.conf \
-    $(VENDOR_DIR)/etc/gps.xml:system/etc/gps.xml
+    $(VENDOR_DIR)/etc/gps.xml:system/etc/gps.xml \
+    $(VENDOR_DIR)/etc/srm.bin:system/etc/srm.bin
 
 # lib/hw
 PRODUCT_COPY_FILES += \
@@ -159,4 +162,3 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     $(VENDOR_DIR)/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     $(VENDOR_DIR)/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so
-
