@@ -82,15 +82,8 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/omx/libOMX.Exynos.VP8.Decoder.so:system/lib/omx/libOMX.Exynos.VP8.Decoder.so \
     $(VENDOR_DIR)/lib/omx/libOMX.Exynos.VP8.Encoder.so:system/lib/omx/libOMX.Exynos.VP8.Encoder.so
 
-# lib/soundfx
-PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/lib/soundfx/libaudiosa_sec.so:system/lib/soundfx/libaudiosa_sec.so
-
 # lib
 PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \
-    $(VENDOR_DIR)/lib/lib_SA_GoogleFX_ver124.so:system/lib/lib_SA_GoogleFX_ver124.so \
-    $(VENDOR_DIR)/lib/lib_SoundAlive_play_ver125d.so:system/lib/lib_SoundAlive_play_ver125d.so \
     $(VENDOR_DIR)/lib/libak8963c.so:system/lib/libak8963c.so \
     $(VENDOR_DIR)/lib/libarcsoft_flawlessface.so:system/lib/libarcsoft_flawlessface.so \
     $(VENDOR_DIR)/lib/libarcsoft_nighthawk.so:system/lib/libarcsoft_nighthawk.so \
@@ -100,11 +93,10 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/libarcsoft_picaction.so:system/lib/libarcsoft_picaction.so \
     $(VENDOR_DIR)/lib/libarcsoft_sensorndk.so:system/lib/libarcsoft_sensorndk.so \
     $(VENDOR_DIR)/lib/libarcsoft_skin_soften.so:system/lib/libarcsoft_skin_soften.so \
-    $(VENDOR_DIR)/lib/libaudiosa.so:system/lib/libaudiosa.so \
     $(VENDOR_DIR)/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
     $(VENDOR_DIR)/lib/libhdcp2.so:system/lib/libhdcp2.so \
     $(VENDOR_DIR)/lib/libliveframework.so:system/lib/libliveframework.so \
-    $(VENDOR_DIR)/lib/libmysound.so:system/lib/libmysound.so \
+    $(VENDOR_DIR)/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \
     $(VENDOR_DIR)/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     $(VENDOR_DIR)/lib/libsec-ril.so:system/lib/libsec-ril.so \
     $(VENDOR_DIR)/lib/libvdis.so:system/lib/libvdis.so
@@ -134,10 +126,6 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/media/battery_charging_95.qmg:system/media/battery_charging_95.qmg \
     $(VENDOR_DIR)/media/battery_error.qmg:system/media/battery_error.qmg \
     $(VENDOR_DIR)/media/chargingwarning.qmg:system/media/chargingwarning.qmg
-
-# vendor/etc
-PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
 # vendor/firmware
 PRODUCT_COPY_FILES += \
@@ -173,6 +161,4 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/vendor/lib/libRSDriverArm.so:system/vendor/lib/libRSDriverArm.so \
     $(VENDOR_DIR)/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     $(VENDOR_DIR)/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-    $(VENDOR_DIR)/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
-    $(VENDOR_DIR)/vendor/lib/liblvverx_3.20.03.so:system/vendor/lib/liblvverx_3.20.03.so \
-    $(VENDOR_DIR)/vendor/lib/liblvvetx_3.20.03.so:system/vendor/lib/liblvvetx_3.20.03.so
+    $(VENDOR_DIR)/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so
