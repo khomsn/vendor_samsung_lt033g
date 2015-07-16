@@ -73,15 +73,6 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/hw/gps.universal5420.so:system/lib/hw/gps.universal5420.so \
     $(VENDOR_DIR)/lib/hw/sensors.universal5420.so:system/lib/hw/sensors.universal5420.so
 
-# lib/omx
-PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/lib/omx/libOMX.Exynos.AVC.Decoder.so:system/lib/omx/libOMX.Exynos.AVC.Decoder.so \
-    $(VENDOR_DIR)/lib/omx/libOMX.Exynos.AVC.Encoder.so:system/lib/omx/libOMX.Exynos.AVC.Encoder.so \
-    $(VENDOR_DIR)/lib/omx/libOMX.Exynos.MPEG4.Decoder.so:system/lib/omx/libOMX.Exynos.MPEG4.Decoder.so \
-    $(VENDOR_DIR)/lib/omx/libOMX.Exynos.MPEG4.Encoder.so:system/lib/omx/libOMX.Exynos.MPEG4.Encoder.so \
-    $(VENDOR_DIR)/lib/omx/libOMX.Exynos.VP8.Decoder.so:system/lib/omx/libOMX.Exynos.VP8.Decoder.so \
-    $(VENDOR_DIR)/lib/omx/libOMX.Exynos.VP8.Encoder.so:system/lib/omx/libOMX.Exynos.VP8.Encoder.so
-
 # lib
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/libak8963c.so:system/lib/libak8963c.so \
