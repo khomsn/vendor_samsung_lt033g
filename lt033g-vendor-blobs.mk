@@ -44,9 +44,7 @@ PRODUCT_COPY_FILES += \
 
 # bin
 PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/bin/drmserver.samsung:system/bin/drmserver.samsung \
     $(VENDOR_DIR)/bin/gpsd:system/bin/gpsd \
-    $(VENDOR_DIR)/bin/lpm:system/bin/lpm \
     $(VENDOR_DIR)/bin/scranton_RD:system/bin/scranton_RD
 
 # etc/wifi
@@ -76,47 +74,13 @@ PRODUCT_COPY_FILES += \
 # lib
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/libak8963c.so:system/lib/libak8963c.so \
-    $(VENDOR_DIR)/lib/libarcsoft_flawlessface.so:system/lib/libarcsoft_flawlessface.so \
     $(VENDOR_DIR)/lib/libarcsoft_nighthawk.so:system/lib/libarcsoft_nighthawk.so \
-    $(VENDOR_DIR)/lib/libarcsoft_night_shot.so:system/lib/libarcsoft_night_shot.so \
-    $(VENDOR_DIR)/lib/libarcsoft_panorama_burstcapture.so:system/lib/libarcsoft_panorama_burstcapture.so \
-    $(VENDOR_DIR)/lib/libarcsoft_picaction_manual.so:system/lib/libarcsoft_picaction_manual.so \
-    $(VENDOR_DIR)/lib/libarcsoft_picaction.so:system/lib/libarcsoft_picaction.so \
-    $(VENDOR_DIR)/lib/libarcsoft_sensorndk.so:system/lib/libarcsoft_sensorndk.so \
-    $(VENDOR_DIR)/lib/libarcsoft_skin_soften.so:system/lib/libarcsoft_skin_soften.so \
     $(VENDOR_DIR)/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
     $(VENDOR_DIR)/lib/libhdcp2.so:system/lib/libhdcp2.so \
     $(VENDOR_DIR)/lib/libliveframework.so:system/lib/libliveframework.so \
-    $(VENDOR_DIR)/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \
-    $(VENDOR_DIR)/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     $(VENDOR_DIR)/lib/libsec-ril.so:system/lib/libsec-ril.so \
+    $(VENDOR_DIR)/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     $(VENDOR_DIR)/lib/libvdis.so:system/lib/libvdis.so
-
-# media
-PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/media/battery_batteryerror.qmg:system/media/battery_batteryerror.qmg \
-    $(VENDOR_DIR)/media/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
-    $(VENDOR_DIR)/media/battery_charging_10.qmg:system/media/battery_charging_10.qmg \
-    $(VENDOR_DIR)/media/battery_charging_15.qmg:system/media/battery_charging_15.qmg \
-    $(VENDOR_DIR)/media/battery_charging_20.qmg:system/media/battery_charging_20.qmg \
-    $(VENDOR_DIR)/media/battery_charging_25.qmg:system/media/battery_charging_25.qmg \
-    $(VENDOR_DIR)/media/battery_charging_30.qmg:system/media/battery_charging_30.qmg \
-    $(VENDOR_DIR)/media/battery_charging_35.qmg:system/media/battery_charging_35.qmg \
-    $(VENDOR_DIR)/media/battery_charging_40.qmg:system/media/battery_charging_40.qmg \
-    $(VENDOR_DIR)/media/battery_charging_45.qmg:system/media/battery_charging_45.qmg \
-    $(VENDOR_DIR)/media/battery_charging_50.qmg:system/media/battery_charging_50.qmg \
-    $(VENDOR_DIR)/media/battery_charging_55.qmg:system/media/battery_charging_55.qmg \
-    $(VENDOR_DIR)/media/battery_charging_5.qmg:system/media/battery_charging_5.qmg \
-    $(VENDOR_DIR)/media/battery_charging_60.qmg:system/media/battery_charging_60.qmg \
-    $(VENDOR_DIR)/media/battery_charging_65.qmg:system/media/battery_charging_65.qmg \
-    $(VENDOR_DIR)/media/battery_charging_70.qmg:system/media/battery_charging_70.qmg \
-    $(VENDOR_DIR)/media/battery_charging_75.qmg:system/media/battery_charging_75.qmg \
-    $(VENDOR_DIR)/media/battery_charging_80.qmg:system/media/battery_charging_80.qmg \
-    $(VENDOR_DIR)/media/battery_charging_85.qmg:system/media/battery_charging_85.qmg \
-    $(VENDOR_DIR)/media/battery_charging_90.qmg:system/media/battery_charging_90.qmg \
-    $(VENDOR_DIR)/media/battery_charging_95.qmg:system/media/battery_charging_95.qmg \
-    $(VENDOR_DIR)/media/battery_error.qmg:system/media/battery_error.qmg \
-    $(VENDOR_DIR)/media/chargingwarning.qmg:system/media/chargingwarning.qmg
 
 # vendor/firmware
 PRODUCT_COPY_FILES += \
