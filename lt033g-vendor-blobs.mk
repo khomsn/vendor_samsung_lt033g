@@ -29,14 +29,17 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/app/mcRegistry/ffffffff000000000000000000000008.tlbin:system/app/mcRegistry/ffffffff000000000000000000000008.tlbin \
     $(VENDOR_DIR)/app/mcRegistry/ffffffff000000000000000000000009.tlbin:system/app/mcRegistry/ffffffff000000000000000000000009.tlbin \
     $(VENDOR_DIR)/app/mcRegistry/ffffffff00000000000000000000000a.tlbin:system/app/mcRegistry/ffffffff00000000000000000000000a.tlbin \
-    $(VENDOR_DIR)/app/mcRegistry/ffffffff00000000000000000000000b.tlbin:system/app/mcRegistry/ffffffff00000000000000000000000b.tlbin \
     $(VENDOR_DIR)/app/mcRegistry/ffffffff00000000000000000000000c.tlbin:system/app/mcRegistry/ffffffff00000000000000000000000c.tlbin \
     $(VENDOR_DIR)/app/mcRegistry/ffffffff00000000000000000000000d.tlbin:system/app/mcRegistry/ffffffff00000000000000000000000d.tlbin \
     $(VENDOR_DIR)/app/mcRegistry/ffffffff00000000000000000000000f.tlbin:system/app/mcRegistry/ffffffff00000000000000000000000f.tlbin \
     $(VENDOR_DIR)/app/mcRegistry/ffffffff000000000000000000000010.tlbin:system/app/mcRegistry/ffffffff000000000000000000000010.tlbin \
     $(VENDOR_DIR)/app/mcRegistry/ffffffff000000000000000000000011.tlbin:system/app/mcRegistry/ffffffff000000000000000000000011.tlbin \
+    $(VENDOR_DIR)/app/mcRegistry/ffffffff000000000000000000000012.tlbin:system/app/mcRegistry/ffffffff000000000000000000000012.tlbin \
+    $(VENDOR_DIR)/app/mcRegistry/ffffffff000000000000000000000013.tlbin:system/app/mcRegistry/ffffffff000000000000000000000013.tlbin \
+    $(VENDOR_DIR)/app/mcRegistry/ffffffff000000000000000000000017.tlbin:system/app/mcRegistry/ffffffff000000000000000000000017.tlbin \
     $(VENDOR_DIR)/app/mcRegistry/ffffffffd00000000000000000000004.tlbin:system/app/mcRegistry/ffffffffd00000000000000000000004.tlbin \
-    $(VENDOR_DIR)/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin:system/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin
+    $(VENDOR_DIR)/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin:system/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin \
+    $(VENDOR_DIR)/app/mcRegistry/fffffffff0000000000000000000001e.tlbin:system/app/mcRegistry/fffffffff0000000000000000000001e.tlbin
 
 # app
 PRODUCT_COPY_FILES += \
@@ -76,19 +79,15 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/libak8963c.so:system/lib/libak8963c.so \
     $(VENDOR_DIR)/lib/libarcsoft_nighthawk.so:system/lib/libarcsoft_nighthawk.so \
     $(VENDOR_DIR)/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
-    $(VENDOR_DIR)/lib/libhdcp2.so:system/lib/libhdcp2.so \
     $(VENDOR_DIR)/lib/libliveframework.so:system/lib/libliveframework.so \
+    $(VENDOR_DIR)/lib/libhdcp2.so:system/lib/libhdcp2.so \
     $(VENDOR_DIR)/lib/libsec-ril.so:system/lib/libsec-ril.so \
     $(VENDOR_DIR)/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     $(VENDOR_DIR)/lib/libvdis.so:system/lib/libvdis.so
 
 # vendor/firmware
 PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/vendor/firmware/bcm4335_A0.hcd:system/vendor/firmware/bcm4335_A0.hcd \
-    $(VENDOR_DIR)/vendor/firmware/bcm4335.hcd:system/vendor/firmware/bcm4335.hcd \
-    $(VENDOR_DIR)/vendor/firmware/bcm4335_murata.hcd:system/vendor/firmware/bcm4335_murata.hcd \
-    $(VENDOR_DIR)/vendor/firmware/bcm4335_semco.hcd:system/vendor/firmware/bcm4335_semco.hcd \
-    $(VENDOR_DIR)/vendor/firmware/BT_FW_VER_BCM4339_003.001.009.0025.0050_ORC_V1-3G.hcd:system/vendor/firmware/BT_FW_VER_BCM4339_003.001.009.0025.0050_ORC_V1-3G.hcd \
+    $(VENDOR_DIR)/vendor/firmware/bcm4335_V0105.0552.hcd:system/vendor/firmware/bcm4335_V0105.0552.hcd \
     $(VENDOR_DIR)/vendor/firmware/fimc_is_fw2_IMX134.bin:system/vendor/firmware/fimc_is_fw2_IMX134.bin \
     $(VENDOR_DIR)/vendor/firmware/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin \
     $(VENDOR_DIR)/vendor/firmware/setfile_6b2.bin:system/vendor/firmware/setfile_6b2.bin \
@@ -97,23 +96,19 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/vendor/firmware/srp_data.bin:system/vendor/firmware/srp_data.bin \
     $(VENDOR_DIR)/vendor/firmware/srp_vliw.bin:system/vendor/firmware/srp_vliw.bin
 
-# vendor/lib/drm
-PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
-
 # vendor/lib/egl
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/vendor/lib/egl/libGLES_mali.so:system/vendor/lib/egl/libGLES_mali.so
 
 # vendor/lib/mediadrm
 PRODUCT_COPY_FILES += \
+    $(VENDOR_DIR)/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
     $(VENDOR_DIR)/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
 
 # vendor/lib
 PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/vendor/lib/libmalicore.bc:system/vendor/lib/libmalicore.bc \
-    $(VENDOR_DIR)/vendor/lib/liboemcrypto.so:system/vendor/lib/liboemcrypto.so \
     $(VENDOR_DIR)/vendor/lib/libRSDriverArm.so:system/vendor/lib/libRSDriverArm.so \
+    $(VENDOR_DIR)/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
+    $(VENDOR_DIR)/vendor/lib/libmalicore.bc:system/vendor/lib/libmalicore.bc \
     $(VENDOR_DIR)/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
-    $(VENDOR_DIR)/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-    $(VENDOR_DIR)/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so
+    $(VENDOR_DIR)/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so
