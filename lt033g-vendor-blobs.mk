@@ -70,20 +70,21 @@ PRODUCT_COPY_FILES += \
 
 # lib/hw
 PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/lib/hw/camera.vendor.universal5420.so:system/lib/hw/camera.vendor.universal5420.so \
-    $(VENDOR_DIR)/lib/hw/gps.universal5420.so:system/lib/hw/gps.universal5420.so \
+    $(VENDOR_DIR)/lib/hw/camera.universal5420.so:system/lib/hw/camera.universal5420.so \
+    $(VENDOR_DIR)/lib/hw/gps.default.so:system/lib/hw/gps.universal5420.so \
     $(VENDOR_DIR)/lib/hw/sensors.universal5420.so:system/lib/hw/sensors.universal5420.so
 
 # lib
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/libak8963c.so:system/lib/libak8963c.so \
-    $(VENDOR_DIR)/lib/libarcsoft_nighthawk.so:system/lib/libarcsoft_nighthawk.so \
     $(VENDOR_DIR)/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
-    $(VENDOR_DIR)/lib/libliveframework.so:system/lib/libliveframework.so \
     $(VENDOR_DIR)/lib/libhdcp2.so:system/lib/libhdcp2.so \
+    $(VENDOR_DIR)/lib/libhwjpeg.so:system/lib/libhwjpeg.so \
+    $(VENDOR_DIR)/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
     $(VENDOR_DIR)/lib/libsec-ril.so:system/lib/libsec-ril.so \
     $(VENDOR_DIR)/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
-    $(VENDOR_DIR)/lib/libvdis.so:system/lib/libvdis.so
+    $(VENDOR_DIR)/lib/libvdis.so:system/lib/libvdis.so \
+    $(VENDOR_DIR)/lib/libwrappergps.so:system/lib/libwrappergps.so
 
 # vendor/firmware
 PRODUCT_COPY_FILES += \
@@ -102,7 +103,6 @@ PRODUCT_COPY_FILES += \
 
 # vendor/lib/mediadrm
 PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
     $(VENDOR_DIR)/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
 
 # vendor/lib
