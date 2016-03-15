@@ -71,20 +71,28 @@ PRODUCT_COPY_FILES += \
 # lib/hw
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/hw/camera.universal5420.so:system/lib/hw/camera.universal5420.so \
-    $(VENDOR_DIR)/lib/hw/gps.default.so:system/lib/hw/gps.universal5420.so \
+    $(VENDOR_DIR)/lib/hw/gps.universal5420.so:system/lib/hw/gps.universal5420.so \
     $(VENDOR_DIR)/lib/hw/sensors.universal5420.so:system/lib/hw/sensors.universal5420.so
 
 # lib
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/libak8963c.so:system/lib/libak8963c.so \
+    $(VENDOR_DIR)/lib/libarcsoft_night_shot_ex.so:system/lib/libarcsoft_night_shot_ex.so \
+    $(VENDOR_DIR)/lib/libarcsoft_panorama_burstcapture.so:system/lib/libarcsoft_panorama_burstcapture.so \
+    $(VENDOR_DIR)/lib/libarcsoft_picaction_manual.so:system/lib/libarcsoft_picaction_manual.so \
+    $(VENDOR_DIR)/lib/libarcsoft_picaction.so:system/lib/libarcsoft_picaction.so \
+    $(VENDOR_DIR)/lib/libarcsoft_selfie_camera_lite.so:system/lib/libarcsoft_selfie_camera_lite.so \
+    $(VENDOR_DIR)/lib/libarcsoft_sensorndk.so:system/lib/libarcsoft_sensorndk.so \
     $(VENDOR_DIR)/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
-    $(VENDOR_DIR)/lib/libhdcp2.so:system/lib/libhdcp2.so \
     $(VENDOR_DIR)/lib/libhwjpeg.so:system/lib/libhwjpeg.so \
-    $(VENDOR_DIR)/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
+    $(VENDOR_DIR)/lib/libhdcp2.so:system/lib/libhdcp2.so \
     $(VENDOR_DIR)/lib/libsec-ril.so:system/lib/libsec-ril.so \
     $(VENDOR_DIR)/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
-    $(VENDOR_DIR)/lib/libvdis.so:system/lib/libvdis.so \
-    $(VENDOR_DIR)/lib/libwrappergps.so:system/lib/libwrappergps.so
+    $(VENDOR_DIR)/lib/libvdis.so:system/lib/libvdis.so
+
+# sbin
+PRODUCT_COPY_FILES += \
+    $(VENDOR_DIR)/sbin/sswap:root/sbin/sswap
 
 # vendor/firmware
 PRODUCT_COPY_FILES += \
@@ -103,11 +111,11 @@ PRODUCT_COPY_FILES += \
 
 # vendor/lib/mediadrm
 PRODUCT_COPY_FILES += \
+    $(VENDOR_DIR)/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
     $(VENDOR_DIR)/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
 
 # vendor/lib
 PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/vendor/lib/libRSDriverArm.so:system/vendor/lib/libRSDriverArm.so \
     $(VENDOR_DIR)/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     $(VENDOR_DIR)/vendor/lib/libmalicore.bc:system/vendor/lib/libmalicore.bc \
     $(VENDOR_DIR)/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
