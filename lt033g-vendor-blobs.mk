@@ -68,6 +68,10 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/etc/gps.xml:system/etc/gps.xml \
     $(VENDOR_DIR)/etc/srm.bin:system/etc/srm.bin
 
+# lib/drm
+PRODUCT_COPY_FILES += \
+    $(VENDOR_DIR)/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so
+
 # lib/hw
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/hw/camera.universal5420.so:system/lib/hw/camera.vendor.universal5420.so \
@@ -83,11 +87,14 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/libarcsoft_picaction.so:system/lib/libarcsoft_picaction.so \
     $(VENDOR_DIR)/lib/libarcsoft_selfie_camera_lite.so:system/lib/libarcsoft_selfie_camera_lite.so \
     $(VENDOR_DIR)/lib/libarcsoft_sensorndk.so:system/lib/libarcsoft_sensorndk.so \
+    $(VENDOR_DIR)/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     $(VENDOR_DIR)/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
     $(VENDOR_DIR)/lib/libhwjpeg.so:system/lib/libhwjpeg.so \
+    $(VENDOR_DIR)/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
     $(VENDOR_DIR)/lib/libhdcp2.so:system/lib/libhdcp2.so \
     $(VENDOR_DIR)/lib/libsec-ril.so:system/lib/libsec-ril.so \
     $(VENDOR_DIR)/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
+    $(VENDOR_DIR)/lib//libstagefright_hdcp.so:system/lib/libstagefright_hdcp.so \
     $(VENDOR_DIR)/lib/libvdis.so:system/lib/libvdis.so
 
 # sbin
@@ -111,7 +118,6 @@ PRODUCT_COPY_FILES += \
 
 # vendor/lib/mediadrm
 PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
     $(VENDOR_DIR)/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
 
 # vendor/lib
