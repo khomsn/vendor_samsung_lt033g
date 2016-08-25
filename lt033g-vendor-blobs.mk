@@ -47,6 +47,7 @@ PRODUCT_COPY_FILES += \
 
 # bin
 PRODUCT_COPY_FILES += \
+    $(VENDOR_DIR)/bin/gps.cer:system/bin/gps.cer \
     $(VENDOR_DIR)/bin/gpsd:system/bin/gpsd \
     $(VENDOR_DIR)/bin/scranton_RD:system/bin/scranton_RD
 
@@ -87,8 +88,9 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/libhdcp2.so:system/lib/libhdcp2.so \
     $(VENDOR_DIR)/lib/libsec-ril.so:system/lib/libsec-ril.so \
     $(VENDOR_DIR)/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
-    $(VENDOR_DIR)/lib//libstagefright_hdcp.so:system/lib/libstagefright_hdcp.so \
-    $(VENDOR_DIR)/lib/libvdis.so:system/lib/libvdis.so
+    $(VENDOR_DIR)/lib/libstagefright_hdcp.so:system/lib/libstagefright_hdcp.so \
+    $(VENDOR_DIR)/lib/libvdis.so:system/lib/libvdis.so \
+    $(VENDOR_DIR)/lib/libwrappergps.so:system/lib/libwrappergps.so
 
 # sbin
 PRODUCT_COPY_FILES += \
