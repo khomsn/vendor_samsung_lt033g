@@ -118,6 +118,5 @@ PRODUCT_COPY_FILES += \
 # vendor/lib
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
-    $(VENDOR_DIR)/vendor/lib/libmalicore.bc:system/vendor/lib/libmalicore.bc \
     $(VENDOR_DIR)/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     $(VENDOR_DIR)/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so
