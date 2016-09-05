@@ -170,7 +170,8 @@ PRODUCT_COPY_FILES += \
 
 # vendor/lib/mediadrm
 PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
+    $(VENDOR_DIR)/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
+    $(VENDOR_DIR)/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so
 
 # vendor/lib
 PRODUCT_COPY_FILES += \
