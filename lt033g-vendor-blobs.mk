@@ -68,10 +68,6 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/etc/gps.xml:system/etc/gps.xml \
     $(VENDOR_DIR)/etc/srm.bin:system/etc/srm.bin
 
-# lib/drm
-PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so
-
 # lib/hw
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/hw/camera.universal5420.so:system/lib/hw/camera.vendor.universal5420.so \
@@ -81,7 +77,6 @@ PRODUCT_COPY_FILES += \
 # lib
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/libak8963c.so:system/lib/libak8963c.so \
-    $(VENDOR_DIR)/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     $(VENDOR_DIR)/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
     $(VENDOR_DIR)/lib/libhdcp2.so:system/lib/libhdcp2.so \
     $(VENDOR_DIR)/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
@@ -163,18 +158,23 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/vendor/firmware/srp_data.bin:system/vendor/firmware/srp_data.bin \
     $(VENDOR_DIR)/vendor/firmware/srp_vliw.bin:system/vendor/firmware/srp_vliw.bin
 
+# vendor/lib/drm
+PRODUCT_COPY_FILES += \
+    $(VENDOR_DIR)/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
+
 # vendor/lib/egl
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/vendor/lib/egl/libGLES_mali.so:system/vendor/lib/egl/libGLES_mali.so
 
 # vendor/lib/mediadrm
 PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-    $(VENDOR_DIR)/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so
+    $(VENDOR_DIR)/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
 
 # vendor/lib
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
+    $(VENDOR_DIR)/vendor/lib/libWVphoneAPI.so:system/vendor/lib/libWVphoneAPI.so \
+    $(VENDOR_DIR)/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
     $(VENDOR_DIR)/vendor/lib/liblvverx_3.20.03.so:system/vendor/lib/liblvverx_3.20.03.so \
     $(VENDOR_DIR)/vendor/lib/liblvvetx_3.20.03.so:system/vendor/lib/liblvvetx_3.20.03.so \
     $(VENDOR_DIR)/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
