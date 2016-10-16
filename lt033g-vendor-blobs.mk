@@ -77,15 +77,8 @@ PRODUCT_COPY_FILES += \
 # lib
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/libak8963c.so:system/lib/libak8963c.so \
-    $(VENDOR_DIR)/lib/libarcsoft_night_shot_ex.so:system/lib/libarcsoft_night_shot_ex.so \
-    $(VENDOR_DIR)/lib/libarcsoft_panorama_burstcapture.so:system/lib/libarcsoft_panorama_burstcapture.so \
-    $(VENDOR_DIR)/lib/libarcsoft_picaction.so:system/lib/libarcsoft_picaction.so \
-    $(VENDOR_DIR)/lib/libarcsoft_picaction_manual.so:system/lib/libarcsoft_picaction_manual.so \
-    $(VENDOR_DIR)/lib/libarcsoft_selfie_camera_lite.so:system/lib/libarcsoft_selfie_camera_lite.so \
-    $(VENDOR_DIR)/lib/libarcsoft_sensorndk.so:system/lib/libarcsoft_sensorndk.so \
     $(VENDOR_DIR)/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
     $(VENDOR_DIR)/lib/libhdcp2.so:system/lib/libhdcp2.so \
-    $(VENDOR_DIR)/lib/libmor.so:system/lib/libmor.so \
     $(VENDOR_DIR)/lib/libmysound.so:system/lib/libmysound.so \
     $(VENDOR_DIR)/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
     $(VENDOR_DIR)/lib/libsec-ril.so:system/lib/libsec-ril.so \
