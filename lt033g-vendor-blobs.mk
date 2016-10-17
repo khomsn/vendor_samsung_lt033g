@@ -77,6 +77,7 @@ PRODUCT_COPY_FILES += \
 # lib
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/libak8963c.so:system/lib/libak8963c.so \
+    $(VENDOR_DIR)/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     $(VENDOR_DIR)/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
     $(VENDOR_DIR)/lib/libhdcp2.so:system/lib/libhdcp2.so \
     $(VENDOR_DIR)/lib/libmysound.so:system/lib/libmysound.so \
@@ -204,8 +205,6 @@ PRODUCT_COPY_FILES += \
 # vendor/lib
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
-    $(VENDOR_DIR)/vendor/lib/libWVphoneAPI.so:system/vendor/lib/libWVphoneAPI.so \
-    $(VENDOR_DIR)/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
     $(VENDOR_DIR)/vendor/lib/liblvverx_3.20.03.so:system/vendor/lib/liblvverx_3.20.03.so \
     $(VENDOR_DIR)/vendor/lib/liblvvetx_3.20.03.so:system/vendor/lib/liblvvetx_3.20.03.so \
     $(VENDOR_DIR)/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
