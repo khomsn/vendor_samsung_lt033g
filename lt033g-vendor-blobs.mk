@@ -53,8 +53,7 @@ PRODUCT_COPY_FILES += \
 # bin
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/bin/gps.cer:system/bin/gps.cer \
-    $(VENDOR_DIR)/bin/gpsd:system/bin/gpsd \
-    $(VENDOR_DIR)/bin/scranton_RD:system/bin/scranton_RD
+    $(VENDOR_DIR)/bin/gpsd:system/bin/gpsd
 
 # etc/wifi
 PRODUCT_COPY_FILES += \
