@@ -85,6 +85,7 @@ PRODUCT_COPY_FILES += \
 
 # lib
 PRODUCT_COPY_FILES += \
+    $(VENDOR_DIR)/lib/libGLES_trace.so:system/lib/libGLES_trace.so \
     $(VENDOR_DIR)/lib/libak8963c.so:system/lib/libak8963c.so \
     $(VENDOR_DIR)/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     $(VENDOR_DIR)/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
