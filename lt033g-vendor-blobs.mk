@@ -83,10 +83,17 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/omx/libOMX.Exynos.AVC.Encoder.so:system/lib/omx/libOMX.Exynos.AVC.Encoder.so
 
+# lib/soundfx
+PRODUCT_COPY_FILES += \
+    $(VENDOR_DIR)/lib/soundfx/libaudiosa_sec.so:system/lib/soundfx/libaudiosa_sec.so
+
 # lib
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/libGLES_trace.so:system/lib/libGLES_trace.so \
+    $(VENDOR_DIR)/lib/lib_SA_GoogleFX_ver124b.so:system/lib/lib_SA_GoogleFX_ver124b.so \
+    $(VENDOR_DIR)/lib/lib_SoundAlive_play_ver125e.so:system/lib/lib_SoundAlive_play_ver125e.so \
     $(VENDOR_DIR)/lib/libak8963c.so:system/lib/libak8963c.so \
+    $(VENDOR_DIR)/lib/libaudiosa.so:system/lib/libaudiosa.so \
     $(VENDOR_DIR)/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     $(VENDOR_DIR)/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
     $(VENDOR_DIR)/lib/libhdcp2.so:system/lib/libhdcp2.so \
