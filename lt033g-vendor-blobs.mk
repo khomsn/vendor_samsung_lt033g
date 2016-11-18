@@ -91,12 +91,10 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/libaudiosa.so:system/lib/libaudiosa.so \
     $(VENDOR_DIR)/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     $(VENDOR_DIR)/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
-    $(VENDOR_DIR)/lib/libhdcp2.so:system/lib/libhdcp2.so \
     $(VENDOR_DIR)/lib/libmysound.so:system/lib/libmysound.so \
     $(VENDOR_DIR)/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
     $(VENDOR_DIR)/lib/libsec-ril.so:system/lib/libsec-ril.so \
     $(VENDOR_DIR)/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
-    $(VENDOR_DIR)/lib/libstagefright_hdcp.so:system/lib/libstagefright_hdcp.so \
     $(VENDOR_DIR)/lib/libvdis.so:system/lib/libvdis.so \
     $(VENDOR_DIR)/lib/libwrappergps.so:system/lib/libwrappergps.so
 
