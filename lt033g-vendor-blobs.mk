@@ -97,10 +97,6 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/libvdis.so:system/lib/libvdis.so \
     $(VENDOR_DIR)/lib/libwrappergps.so:system/lib/libwrappergps.so
 
-# sbin
-PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/sbin/sswap:root/sbin/sswap
-
 # vendor/etc/nxp
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/vendor/etc/nxp/BargeIn/Tx_ControlParams_WIDEBAND_SPEAKER.txt:system/vendor/etc/nxp/BargeIn/Tx_ControlParams_WIDEBAND_SPEAKER.txt \
