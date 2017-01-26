@@ -210,6 +210,7 @@ PRODUCT_COPY_FILES += \
 # vendor/lib
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
+    $(VENDOR_DIR)/vendor/lib/libWVphoneAPI.so:system/vendor/lib/libWVphoneAPI.so \
     $(VENDOR_DIR)/vendor/lib/liblvverx_3.20.03.so:system/vendor/lib/liblvverx_3.20.03.so \
     $(VENDOR_DIR)/vendor/lib/liblvvetx_3.20.03.so:system/vendor/lib/liblvvetx_3.20.03.so \
     $(VENDOR_DIR)/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
