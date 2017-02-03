@@ -48,6 +48,7 @@ PRODUCT_COPY_FILES += \
 # bin
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/bin/cbd:system/bin/cbd \
+    $(VENDOR_DIR)/bin/cs:system/bin/cs \
     $(VENDOR_DIR)/bin/gps.cer:system/bin/gps.cer \
     $(VENDOR_DIR)/bin/gpsd:system/bin/gpsd
 
