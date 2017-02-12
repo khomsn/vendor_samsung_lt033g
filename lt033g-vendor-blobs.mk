@@ -188,10 +188,6 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/vendor/firmware/srp_data.bin:system/vendor/firmware/srp_data.bin \
     $(VENDOR_DIR)/vendor/firmware/srp_vliw.bin:system/vendor/firmware/srp_vliw.bin
 
-# vendor/lib/drm
-PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
-
 # vendor/lib/egl
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/vendor/lib/egl/libGLES_mali.so:system/vendor/lib/egl/libGLES_mali.so
@@ -202,9 +198,5 @@ PRODUCT_COPY_FILES += \
 
 # vendor/lib
 PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
-    $(VENDOR_DIR)/vendor/lib/libWVphoneAPI.so:system/vendor/lib/libWVphoneAPI.so \
     $(VENDOR_DIR)/vendor/lib/liblvverx_3.20.03.so:system/vendor/lib/liblvverx_3.20.03.so \
-    $(VENDOR_DIR)/vendor/lib/liblvvetx_3.20.03.so:system/vendor/lib/liblvvetx_3.20.03.so \
-    $(VENDOR_DIR)/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
-    $(VENDOR_DIR)/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so
+    $(VENDOR_DIR)/vendor/lib/liblvvetx_3.20.03.so:system/vendor/lib/liblvvetx_3.20.03.so
