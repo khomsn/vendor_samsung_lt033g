@@ -68,6 +68,7 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/etc/PDC.ini:system/etc/PDC.ini \
     $(VENDOR_DIR)/etc/gps.conf:system/etc/gps.conf \
     $(VENDOR_DIR)/etc/gps.xml:system/etc/gps.xml \
+    $(VENDOR_DIR)/etc/plmn_se13.bin:system/etc/plmn_se13.bin \
     $(VENDOR_DIR)/etc/srm.bin:system/etc/srm.bin
 
 # lib/hw
