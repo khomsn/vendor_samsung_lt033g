@@ -71,7 +71,6 @@ PRODUCT_COPY_FILES += \
 
 # lib/hw
 PRODUCT_COPY_FILES += \
-    $(VENDOR_DIR)/lib/hw/camera.universal5420.so:system/lib/hw/camera.universal5420.so \
     $(VENDOR_DIR)/lib/hw/gps.universal5420.so:system/lib/hw/gps.universal5420.so \
     $(VENDOR_DIR)/lib/hw/sensors.universal5420.so:system/lib/hw/sensors.universal5420.so
 
